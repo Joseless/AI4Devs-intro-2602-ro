@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reverse String</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: #333;
+      }
+
+      .container {
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        width: 400px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      input {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+      }
+
+      button {
+        padding: 12px 18px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 5px;
+        transition: 0.2s;
+      }
+
+      #reverseBtn {
+        background: #667eea;
+        color: white;
+      }
+
+      #reverseBtn:hover {
+        background: #5563d6;
+      }
+
+      #copyBtn {
+        background: #28a745;
+        color: white;
+      }
+
+      #copyBtn:hover {
+        background: #1f8a38;
+      }
+
+      .result {
+        margin-top: 20px;
+        padding: 12px;
+        background: #f5f5f5;
+        border-radius: 8px;
+        min-height: 20px;
+        font-weight: bold;
+        word-break: break-all;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Reverse String</h1>
+
+      <input
+        type="text"
+        id="textInput"
+        placeholder="Aquí introduce el string..."
+      />
+
+      <div>
+        <button id="reverseBtn">Reverse</button>
+        <button id="copyBtn">Copy</button>
+      </div>
+
+      <div class="result" id="resultLabel"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
